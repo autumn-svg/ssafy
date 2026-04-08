@@ -12,3 +12,16 @@
 
 💡 힌트: 파이썬의 문자열에는 특정 문자의 개수를 세어주는 아주 편한 .count() 기능이 있습니다.
 '''
+
+N = int(input())
+cnt = 0
+for i in range(1, N+1):
+    for j in [i]:
+        j = str(j)
+        if '3' in j:
+            cnt += 1
+        if '6' in j:
+            cnt += 1
+        if '9' in j:
+            cnt += 1
+print(cnt)
